@@ -1,0 +1,27 @@
+# how to use slate https://github.com/jigish/slate/wiki/Global-Configs
+
+# Configs
+config defaultToCurrentScreen true				# not sure
+# config windowHintsShowIcons true				# turn on for icons
+# config windowHintsIgnoreHiddenWindows false	# use hints for hidden windows
+config windowHintsSpread true					# not sure
+
+# Abstract posisions
+alias full          move screenOriginX;screenOriginY                  screenSizeX;screenSizeY
+alias lefthalf      move screenOriginX;screenOriginY                  screenSizeX/2;screenSizeY
+alias righthalf     move screenOriginX+screenSizeX/2;screenOriginY    screenSizeX/2;screenSizeY
+
+alias triple ctrl;alt;cmd
+
+# Bindings
+bind e:cmd hint QWERTASDFGZXCV				# choose order of hint keys
+bind g:cmd grid 0:6,6 1:6,6					# set grid, in format "monitor num:col,row"
+bind `:cmd switch
+
+bind left:${triple} ${lefthalf}				# move to lefthalf
+bind right:${triple} ${righthalf}			# move to righthalf
+bind f:${triple} ${full}					# fullscreen
+
+bind b:cmd;alt focus 'Google Chrome'		# ultra-fast app switch: chrome
+bind t:cmd;alt focus 'Terminal'				#						 terminal
+
