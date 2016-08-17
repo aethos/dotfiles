@@ -15,7 +15,7 @@ alias triple ctrl;alt;cmd
 
 # Bindings
 bind e:cmd hint QWERTASDFGZXCV				# choose order of hint keys
-bind g:cmd grid 0:6,6 1:6,6					# set grid, in format "monitor num:col,row"
+bind h:cmd grid 0:6,6 1:6,6					# set grid, in format "monitor num:col,row"
 bind `:cmd switch
 
 bind left:${triple} ${lefthalf}				# move to lefthalf
