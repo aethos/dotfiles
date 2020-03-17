@@ -14,10 +14,11 @@ alias tophalf	    move screenOriginX;screenOriginY    			  screenSizeX;screenSiz
 alias bottomhalf    move screenOriginX;screenOriginY+screenSizeY/2    screenSizeX;screenSizeY/2
 
 alias triple ctrl;alt;cmd
+alias rhtriple cmd;alt;shift		# triple for the right hand
 
 # Bindings
-bind x:${triple} hint QWERTASDFGZXCV				# choose order of hint keys
-bind c:${triple} grid 0:6,6 1:6,6					# set grid, in format "monitor num:col,row"
+bind e:${rhtriple} hint QWERTASDFGZXCV				# choose order of hint keys
+bind g:${rhtriple} grid 0:6,6 1:6,6					# set grid, in format "monitor num:col,row"
 
 bind left:${triple} ${lefthalf}				# move to lefthalf
 bind right:${triple} ${righthalf}			# move to righthalf
